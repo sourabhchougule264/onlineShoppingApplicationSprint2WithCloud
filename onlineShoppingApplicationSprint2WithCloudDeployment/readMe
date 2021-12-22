@@ -1,0 +1,165 @@
+//Adding products 
+ {
+    "productId":"1218",
+    "productName":"mobile",
+    "price":10000,
+    "color":"red",
+	"dimension":"square",
+	"specification":"i5",
+    "manufacturer":"redmi",
+    "quantity":1,
+    "catId":"1218",
+    "cartId":"1218"
+}
+
+//Adding User
+{
+    "userId":"246",
+    "password":"pass",
+    "role":"sw",
+    "address":{
+	"addressId":"246",
+	"pincode"  :"504201"
+    },
+    "customer":{
+	"customerId":"246",
+        "mobileNumber":"9010"
+	}
+}
+
+{
+    "productId":"1218",
+    "productName":"mobile",
+    "price":10000,
+    "color":"red",
+	"dimension":"square",
+	"specification":"i5",
+    "manufacturer":"redmi",
+    "quantity":1,
+    "catId":"1218",
+    "cartId":"1218",
+    "orderId":"1218"
+    
+}
+
+//adding product to cart
+{
+"cartdto":{
+	"cartId":"1218"
+    },
+    "productdto":{
+	"productId":"1218",
+        "productName":"mobile"
+	}
+}
+
+//view Products from cart(viewAllProducts)
+{
+    "cartId":"1218"
+}
+
+
+
+
+//Adding address
+{
+    "addressId":"1218",
+    "streetNo":"3-2",
+    "buildingName":"redfort",
+    "city":"Hyderabad",
+    "state":"telangana",
+    "country":"India",
+    "pincode":"504201"
+}
+
+
+
+
+//adding order
+{
+    "orderId":"1218",
+    "orderStatus":"ordered",
+    "orderDate":"2019-01-21",
+    "customerId":"1218",
+    "addressId":"1218"
+}
+
+{
+  "customerId":"1234",
+  "email":"saif@123",
+  "
+}
+
+insert into user values('1218','pass','user');
+insert into order_table values ('1218',current_date,'ordered');
+insert into address values ('1218','build','hyd','india','504201','telangana','3-2','1218');
+insert into cart values('1218');
+insert into customer values('1218','test@gmail.com','pranay','s','9010','1218','1218','1218','1218');
+insert into category values('1218','mobile');
+insert into product values('1218','red','circle','vivo','12000','phn','2','i5','1218','1218','1218');
+
+
+
+
+
+
+//process of adding to github
+
+https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line
+
+
+
+
+
+
+//User
+
+http://localhost:8080/loginController/getUser/121
+http://localhost:8080/loginController/getUser/1218
+http://localhost:8080/loginController/signOut
+
+
+//product
+http://localhost:8080/productController/viewAllProducts
+http://localhost:8080/productController/addProduct
+
+//address
+http://localhost:8080/addressController/addAddress
+http://localhost:8080/addressController/updateAddress
+
+
+
+
+
+//cart
+http://localhost:8080/cartController/viewAllProducts
+{
+    "cartId":"1218"
+}
+
+http://localhost:8080/cartController/addProductToCart/2
+
+{
+"cartdto":{
+	"cartId":"1218"
+    },
+    "productdto":{
+	"productId":"1218",
+        "productName":"mobile",
+        "price":19000
+        
+	}
+}
+
+////customer
+ {
+        "customerId": "121",
+        "firstName": "saif",
+        "lastName": "s",
+        "mobileNumber": "9100",
+        "email": "test@gmail.com"
+   }
+
+
+http://localhost:8080/customerController/addCust
+http://localhost:8080/customerController/removeCust
